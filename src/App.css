@@ -1,0 +1,75 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 24px;
+}
+
+.image-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 20px;
+}
+
+.image-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.image-item img {
+  width: 100%;
+  height: 200px; /* Устанавливаем одинаковую высоту для изображений */
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.image-item:hover img {
+  transform: scale(1.05);
+}
+
+.performance {
+  margin-top: 40px;
+  text-align: center; /* Выравниваем текст по центру */
+}
+
+.performance h2 {
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 24px;
+}
+
+.performance-data {
+  display: flex;
+  justify-content: center;
+}
+
+.performance-data p {
+  margin-right: 20px;
+  font-size: 18px;
+}
+
+.spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  position: relative;
+}
+
+.loading-text {
+  position: absolute;
+  bottom: 10px; /* Располагаем текст внизу */
+  color: #333;
+  font-size: 16px;
+}
+
+
+
