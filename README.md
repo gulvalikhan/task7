@@ -1,70 +1,34 @@
-# Getting Started with Create React App
+# Документация по проекту "task7"
+## Описание проекта
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+Проект "task7" является веб-приложением, разработанным с использованием React. Он представляет собой приложение для управления задачами, предназначенное для личного использования.
 
-In the project directory, you can run:
+### Основные компоненты
+### React
 
-### `npm start`
+Весь интерфейс разработан с использованием библиотеки React. Основные компоненты включают в себя:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+**CriticalImagePreloader**:  для предзагрузки критически важных изображений.
+**ImageGallery**:компонент представляет собой галерею изображений, реализованную с использованием React. 
+**LazyImage**: компонент представляет собой изображение, которое загружается лениво при прокрутке пользователем к нему на странице.
+**App**: компонент является основным компонентом веб-приложения и обеспечивает отображение главного интерфейса приложения.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Вспомогательные библиотеки
+Вот список некоторых вспомогательных библиотек, которые могут быть полезны при разработке галереи изображений на React:
 
-### `npm test`
+axios: Для выполнения HTTP-запросов к API.
+react-lazyload: Для ленивой загрузки изображений.
+react-intersection-observer: Для обнаружения видимости элементов на странице и использования ленивой загрузки.
+react-icons: Для добавления иконок в ваше приложение.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Методы оптимизации
 
-### `npm run build`
+Lazy Loading: Определенные компоненты и ресурсы загружаются только при необходимости, что уменьшает начальную нагрузку приложения.
+Code Splitting: Разделение кода позволяет загружать только те части приложения, которые требуются на текущей странице, что уменьшает время загрузки и улучшает производительность.
+Асинхронная загрузка данных: Загрузка данных происходит асинхронно, что позволяет пользователям видеть содержимое приложения без задержек.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Выводы
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+В процессе разработки проекта "task7" я активно использовал различные методы оптимизации для улучшения производительности и пользовательского опыта. Особенно важными изменениями были внедрение lazy loading и которые значительно сократили время загрузки приложения и улучшили отзывчивость интерфейса.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
